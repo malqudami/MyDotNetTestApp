@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\malqudami\\Desktop\\OpenShift\\Labs\\DotNet\\api\\api.csproj": {}
+    "C:\\Users\\malqudami\\Desktop\\OpenShift\\Labs\\MyDotNetTestApp\\api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\malqudami\\Desktop\\OpenShift\\Labs\\DotNet\\api\\api.csproj": {
+    "C:\\Users\\malqudami\\Desktop\\OpenShift\\Labs\\MyDotNetTestApp\\api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\malqudami\\Desktop\\OpenShift\\Labs\\DotNet\\api\\api.csproj",
+        "projectUniqueName": "C:\\Users\\malqudami\\Desktop\\OpenShift\\Labs\\MyDotNetTestApp\\api.csproj",
         "projectName": "api",
-        "projectPath": "C:\\Users\\malqudami\\Desktop\\OpenShift\\Labs\\DotNet\\api\\api.csproj",
+        "projectPath": "C:\\Users\\malqudami\\Desktop\\OpenShift\\Labs\\MyDotNetTestApp\\api.csproj",
         "packagesPath": "C:\\Users\\malqudami\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\malqudami\\Desktop\\OpenShift\\Labs\\DotNet\\api\\obj\\",
+        "outputPath": "C:\\Users\\malqudami\\Desktop\\OpenShift\\Labs\\MyDotNetTestApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\malqudami\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -39,6 +39,14 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.1, )"
+            },
+            "System.Data.OleDb": {
+              "target": "Package",
+              "version": "[*, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
             }
           },
           "imports": [

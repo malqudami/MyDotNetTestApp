@@ -1,25 +1,33 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
-using System.Net.Http;
+using System.Data;
+using System.Data.OleDb;
 
 namespace api.Controllers
 {
     [ApiController]
     public class LoginController : ControllerBase
     {
+
+        static OleDbConnection con = new OleDbConnection("");
+        private static DataTable checkUser(string username, string Passwd)
+        {
+            DataTable dt = new DataTable();
+            return dt;
+        }
+
         
         [Route("api/[controller]/GetAll")]
-        [HttpPost("{JsonBody}")]
-        public IActionResult GetAll([FromBody]JsonBody data)
+        [HttpPost]
+        public IActionResult GetAll([FromBody]JsonBody data, [FromHeader]string Token)
         {
             var jsonToReturn = JsonConvert.SerializeObject(data);
-            
-            return Ok(jsonToReturn);
+
+            if(Token == "testToken2022")            
+                return Ok(jsonToReturn);
+            else
+                return Unauthorized("Unauthorized");
         }
     }
 }
